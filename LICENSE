@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2026 hiking1
+Copyright (c) 2026 PayFriend contributors
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -19,3 +19,9 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+IMPORTANT NOTICE: This license covers the source code only. Operating a
+payment service in Singapore requires a licence from the Monetary Authority of
+Singapore (MAS) under the Payment Services Act 2019. This software does not
+grant any right to hold customer funds, process payments, or claim MAS
+compliance.
