@@ -52,4 +52,8 @@ tasks.test {
         "testDbConfigured",
         providers.environmentVariable("TEST_DB_URL").map { "yes" }.orElse("no")
     )
+    // Print every test as PASSED / SKIPPED / FAILED so a silent skip of the database tests is visible in CI.
+    testLogging {
+        events("passed", "skipped", "failed")
+    }
 }
