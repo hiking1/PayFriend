@@ -46,4 +46,10 @@ dependencies {
 
 tasks.test {
     useJUnit()
+    // The PostgreSQL tests only run when TEST_DB_URL is set. Declaring it as an input stops Gradle
+    // from reusing a cached "skipped" result when the database is available (and vice versa).
+    inputs.property(
+        "testDbConfigured",
+        providers.environmentVariable("TEST_DB_URL").map { "yes" }.orElse("no")
+    )
 }

@@ -89,7 +89,7 @@ object LedgerEntriesTable : Table("ledger_entries") {
     override val primaryKey = PrimaryKey(id)
 }
 
-class ExposedTransactionRepository(private val database: Database) : TransactionRepository {
+class ExposedTransactionRepository(val database: Database) : TransactionRepository {
 
     init {
         transaction(database) { SchemaUtils.create(TransactionsTable, LedgerEntriesTable) }
